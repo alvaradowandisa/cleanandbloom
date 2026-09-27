@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f8f5;
+    color: #2d4037;
+    line-height: 1.7;
+}
+
+/* Header and Navigation */
+header {
+    background: #ffffff;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #dce9e1;
+}
+
+.logo {
+    color: #216b4c;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #344b40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #218357;
+    border-bottom: 2px solid #218357;
+}
+
+/* Home Hero */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #d9f2e5, #dceefa);
+}
+
+.tagline {
+    color: #287c59;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #175c42;
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 12px auto;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 13px 27px;
+    background: #237b53;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.button:hover,
+button:hover {
+    background: #15583b;
+}
+
+/* About and Goals */
+.content {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+h2 {
+    color: #216b4c;
+    margin-bottom: 15px;
+}
+
+.about {
+    padding: 20px 0;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+.goals {
+    background: #e2f1e7;
+    padding: 28px;
+    border-radius: 15px;
+}
+
+ul {
+    padding-left: 23px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Home Message */
+.message {
+    background: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.message p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Inner Pages */
+.page {
+    max-width: 850px;
+    width: 90%;
+    margin: 35px auto 55px;
+}
+
+.page-heading {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.page-heading h1 {
+    font-size: 38px;
+    color: #175c42;
+    margin-bottom: 12px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 22px;
+    border: 1px solid #e0ebe4;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(30, 75, 50, 0.05);
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c9dcd0;
+    border-radius: 8px;
+    font: inherit;
+    background: #fbfdfc;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #78b99a;
+    border-color: #287c59;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 13px;
+    background: #237b53;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#response {
+    color: #216b4c;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background: #175c42;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+    }
+
+    .page-heading h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}

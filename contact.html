@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean & Bloom | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Clean & Bloom</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<main class="page">
+    <section class="page-heading">
+        <p class="tagline">YOUR VOICE MATTERS</p>
+        <h1>Get in Touch</h1>
+
+        <p>
+            Have a suggestion or idea for a cleaner community?
+            Send us your feedback!
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p id="response" role="status"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Clean Today, Bloom Tomorrow.</p>
+    <p>© 2026 Clean & Bloom. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("contactForm")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("response").textContent =
+                "Thank you for supporting Clean & Bloom! " +
+                "This demo form does not send or store messages.";
+
+            this.reset();
+        });
+</script>
+
+</body>
+</html>
